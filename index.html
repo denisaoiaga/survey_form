@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space form </title>
+    <style>
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #211056;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: rgb(184, 232, 253);
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgb(55, 22, 186);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: rgb(121, 232, 239);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Space Group Survey Form</h1>
+    <form id="form">
+        <div class="form-control">
+            <label for="firstName" id="label-name"> First name </label>
+            <input type="text" id="name" placeholder="Enter your first name" />
+            <br>
+            <label for="lastName" id="label-name"> Last name </label>
+            <input type="text" id="name" placeholder="Enter your last name" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="label-email"> Email </label>
+            <input type="email" id="email" placeholder="Enter your email" />
+            <br>
+            <label for="password" id="label-pass"> Password </label>
+            <input type="password" name="pass" id="pass" placeholder="Enter your password">
+        </div>
+        <div class="form-control">
+            <label for="age" id="label-age"> Age </label>
+            <input type="text" id="age" placeholder="Enter your age" />
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role"> What would you like to know more about? </label>
+            <select name="role" id="role">
+                <option value="choose">--Choose--</option>
+                <option value="stars">Stars</option>
+                <option value="plantes">Planets</option>
+                <option value="galaxies">Galaxies</option>
+                <option value="comets">Comets</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-control">
+            <p> In order to join this group, you will need to answer a few questions. Are you ready? </p>
+            <label for="yes"> <input type="radio" id="yes" name="recomand" value="yes"> Yes </label>
+            <label for="no"> <input type="radio" id="no" name="recomand" value="no"> No </label>
+        </div>
+        <br>
+        <div class="form-control">
+            <label> 1. Which is the smallest plant within our solar system? </label>
+            <label for="Mars"> <input type="radio" id="Mars" name="planet"> Mars </input></label>
+            <label for="Venus"> <input type="radio" id="Venus" name="planet"> Venus </input></label>
+            <label for="Neptune"> <input type="radio" id="Neptune" name="planet"> Neptune </input></label>
+            <br>
+            <p> 2. In what year did Pluto become reclassified as a dwarf planet? </p>
+            <label for="2005"> <input type="radio" id="2005" name="year"> 2005 </input></label>
+            <label for="2006"> <input type="radio" id="2006" name="year"> 2006 </input></label>
+            <label for="2007"> <input type="radio" id="2007" name="year"> 2007 </input></label>
+            <br>
+            <label> 3. Which are the four “terrestrial” planets? <small>(Select four plantes.)</small></input></label>
+            <label for="Mercury"> <input type="checkbox" id="Mercury" name="four"> Mercury </input></label>
+            <label for="Pluto"> <input type="checkbox" id="Pluto" name="four"> Pluto </input></label>
+            <label for="Venus"> <input type="checkbox" id="Venus" name="four"> Venus </input></label>
+            <label for="Mars."> <input type="checkbox" id="Mars." name="four"> Mars </input></label>
+            <label for="Uranus"> <input type="checkbox" id="Uranus" name="four"> Uranus </input></label>
+            <label for="Earth"> <input type="checkbox" id="Earth" name="four"> Earth </input></label>
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="comment"> Enter information about you in the box below. </label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+			</textarea>
+        </div>
+        <br>
+        <p> If the answers to the questions are correct, we will contact you with an email.</p>
+        <br>
+        <button type="submit" value="submit"> Submit </button>
+    </form>
+</body>
+
+</html>
